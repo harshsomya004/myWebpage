@@ -10,6 +10,7 @@
     "@mui/material": "5.8.2",
     "jquery": "3.6.0",
     "lodash": "4.17.21",
+    "node-sass": "^7.0.1",
     "react": "18.0.0",
     "react-background-animation": "1.0.1",
     "react-dom": "18.0.0",

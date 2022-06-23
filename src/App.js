@@ -1,7 +1,7 @@
 import "./styles.css";
 import { css } from "@emotion/css";
-import NavBar from "./Components/NavBar";
-import CenterBody from "./Components/CenterBody";
+import NavBar from "./components/NavBar";
+import CenterBody from "./components/CenterBody";
 import {
   TravelerEffect,
   MosaicGroundEffect,
