@@ -1,15 +1,24 @@
 {
-  "name": "harshs-webpage",
-  "version": "1.0.0",
-  "description": "",
+  "name": "y",
+  "version": "y",
+  "description": "Protfolio Website Of Harsh Somya Using ReactJS",
   "keywords": [],
-  "main": "src/index.js",
+  "main": "y",
   "dependencies": {
     "@emotion/css": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "@mui/material": "5.8.2",
+    "jquery": "3.6.0",
+    "lodash": "4.17.21",
     "react": "18.0.0",
+    "react-background-animation": "1.0.1",
     "react-dom": "18.0.0",
+    "react-emotion": "10.0.0",
+    "react-icons": "4.4.0",
+    "react-motion": "0.5.2",
+    "react-router-dom": "6.3.0",
     "react-scripts": "4.0.0",
-    "react-transition-group": "4.4.2"
+    "styled-components": "5.3.5"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
@@ -26,5 +35,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": "y",
+  "author": "harsh Somya",
+  "license": "y",
+  "private": true
 }
