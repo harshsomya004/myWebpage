@@ -1,69 +1,65 @@
 import React from "react";
 import { css } from "@emotion/css";
-import { GrWorkshop } from "react-icons/gr";
 import { HiOutlineLightBulb } from "react-icons/hi";
-import { TravelerEffect, RainEffect } from "react-background-animation";
 
 export default function CenterBody() {
-    const recentProjects = [
-        {
-            name: "Tic Tac Toe Using React.js",
-            link: "https://github.com/harshsomya004/Tic-Tac-Toe-Using-ReactJS",
-            monthAndYear: "Feb,2022"
-        },
-        {
-            name: "Responsive Newsletter Template Using React.js",
-            link:
-                "https://github.com/harshsomya004/NewsLetter-Template-Using-ReactJS-Project",
-            monthAndYear: "Jan,2022"
-        },
-        {
-            name: "To-Do App Using React.js",
-            link: "https://github.com/harshsomya004/To-Do-app-with-ReactJS",
-            monthAndYear: "Feb,2022"
-        },
-        {
-            name: "HR Managment Project Using HTML,CSS, JavaScript",
-            link: "https://github.com/harshsomya004/HR-Management-Project",
-            monthAndYear: "Dec,2021"
-        }
-    ];
+  const recentProjects = [
+    {
+      name: "Tic Tac Toe Using React.js",
+      link: "https://github.com/harshsomya004/Tic-Tac-Toe-Using-ReactJS",
+      monthAndYear: "Feb,2022"
+    },
+    {
+      name: "Responsive Newsletter Template Using React.js",
+      link:
+        "https://github.com/harshsomya004/NewsLetter-Template-Using-ReactJS-Project",
+      monthAndYear: "Jan,2022"
+    },
+    {
+      name: "To-Do App Using React.js",
+      link: "https://github.com/harshsomya004/To-Do-app-with-ReactJS",
+      monthAndYear: "Feb,2022"
+    },
+    {
+      name: "HR Managment Project Using HTML,CSS, JavaScript",
+      link: "https://github.com/harshsomya004/HR-Management-Project",
+      monthAndYear: "Dec,2021"
+    }
+  ];
 
-    const softSkills = [
-        "Frontend Development",
-        "React Native",
-        "React JS",
-        "JavaScript",
-        "DSA",
-        "C++",
-        "RestAPI",
-        "Node.js",
-        "HTML",
-        "CSS",
-        "MATLAB",
-        "Simulink"
-    ];
-    return (
-        <>
-            <div
-                className={css`
+  const softSkills = [
+    "Frontend Development",
+    "React Native",
+    "React JS",
+    "JavaScript",
+    "DSA",
+    "C++",
+    "RestAPI",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "MATLAB",
+    "Simulink"
+  ];
+  return (
+    <>
+      <div
+        className={css`
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-content: center;
-          background-color: lightcyan;
-          border-style: solid;
-          border-color: steelblue;
-          border-width: 2px;
-          border-radius: 12px;
+          background-color: transparent;
           margin-left: 40px;
           margin-right: 40px;
           margin-top: 10px;
           margin-bottom: 10px;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
         `}
-            >
-                <div
-                    className={css`
+      >
+        <div
+          className={css`
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -72,26 +68,26 @@ export default function CenterBody() {
             margin-top: 5px;
             margin-bottom: 7.5px;
             font-weight: bold;
-            font-size: 25px;
+            font-size: 35px;
           `}
-                >
-                    <HiOutlineLightBulb />
-                    Soft Skills
-                </div>
-                <div
-                    className={css`
+        >
+          <HiOutlineLightBulb />
+          Soft Skills
+        </div>
+        <div
+          className={css`
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-content: center;
             text-align: center;
           `}
-                >
-                    {softSkills.map((item, index) => {
-                        return (
-                            <>
-                                <div
-                                    className={css`
+        >
+          {softSkills.map((item, index) => {
+            return (
+              <>
+                <div
+                  className={css`
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -105,23 +101,17 @@ export default function CenterBody() {
                     padding: 10px;
                     color: steelblue;
                     border-radius: 12px;
+                    background-color: whitesmoke;
                   `}
-                                >
-                                    <div
-                                        className={css`
-                      margin-right: 5px;
-                    `}
-                                    >
-                                        <GrWorkshop />
-                                    </div>
-                                    {item}
-                                </div>
-                            </>
-                        );
-                    })}
+                >
+                  {item}
                 </div>
-            </div>
-            {/* <div
+              </>
+            );
+          })}
+        </div>
+      </div>
+      {/* <div
         className={css`
           height: 500px;
           width: 500px;
@@ -131,7 +121,7 @@ export default function CenterBody() {
       >
         <TravelerEffect />
       </div> */}
-            <div>
+      {/* <div>
                 {recentProjects.map((item, index) => {
                     return (
                         <>
@@ -168,7 +158,7 @@ export default function CenterBody() {
                         </>
                     );
                 })}
-            </div>
-        </>
-    );
+            </div> */}
+    </>
+  );
 }
