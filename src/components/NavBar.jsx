@@ -14,13 +14,17 @@ export default function NavBar() {
           align-items: center;
         `}
       >
-        <Link
-          to="/"
+        <div
           className={css`
-            text-decoration: none;
+            z-index: 50;
           `}
         >
-          <div>
+          <Link
+            to="/"
+            className={css`
+              text-decoration: none;
+            `}
+          >
             <div
               className={css`
                 font-family: monospace;
@@ -36,64 +40,69 @@ export default function NavBar() {
             >
               HARSH SOMYA
             </div>
-            <div
+          </Link>
+          <div
+            className={css`
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-content: center;
+              gap: 25px;
+              background-color: transparent;
+              padding-left: 15px;
+              padding-right: 15px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+            `}
+          >
+            <BsGithub
+              size={25}
+              color={"black"}
               className={css`
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-content: center;
-                gap: 25px;
-                background-color: transparent;
-                padding-left: 15px;
-                padding-right: 15px;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                border-style: solid;
+                border-color: black;
+                border-width: 0.5px;
+                padding: 5px;
+                border-radius: 999px;
+                opacity: 1.5;
               `}
-            >
-              <BsGithub
-                size={25}
-                color={"black"}
-                className={css`
-                  border-style: solid;
-                  border-color: black;
-                  border-width: 0.5px;
-                  padding: 5px;
-                  border-radius: 999px;
-                  opacity: 1.5;
-                `}
-              />
-              <BsInstagram
-                size={25}
-                color={"#CC99FF"}
-                className={css`
-                  border-style: solid;
-                  border-color: #cc99ff;
-                  border-width: 0.5px;
-                  padding: 5px;
-                  border-radius: 12px;
-                  opacity: 1.5;
-                `}
-              />
-              <BsLinkedin
-                size={25}
-                color={"blue"}
-                className={css`
-                  border-style: solid;
-                  border-color: blue;
-                  border-width: 0.5px;
-                  padding: 5px;
-                  border-radius: 999px;
-                  opacity: 1.5;
-                `}
-                onClick={() => {
-                  window.location.replace(
-                    "https://www.linkedin.com/in/harsh-somya-004"
-                  );
-                }}
-              />
-            </div>
+              onClick={() => {
+                window.open("https://github.com/harshsomya004");
+              }}
+            />
+            <BsInstagram
+              size={25}
+              color={"#CC99FF"}
+              className={css`
+                border-style: solid;
+                border-color: #cc99ff;
+                border-width: 0.5px;
+                padding: 5px;
+                border-radius: 12px;
+                opacity: 1.5;
+              `}
+              onClick={() => {
+                window.open("https://www.instagram.com/__harsh_._04/");
+              }}
+            />
+            <BsLinkedin
+              size={25}
+              color={"blue"}
+              className={css`
+                border-style: solid;
+                border-color: blue;
+                border-width: 0.5px;
+                padding: 5px;
+                border-radius: 999px;
+                opacity: 1.5;
+              `}
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/harsh-somya-004");
+              }}
+            />
           </div>
-        </Link>
+        </div>
+
         <div
           className={css`
             display: flex;
