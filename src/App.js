@@ -1,7 +1,7 @@
 import "./styles.css";
-import { css } from "@emotion/css";
 import NavBar from "./components/NavBar";
 import CenterBody from "./components/CenterBody";
+import MainAnimation from "./components/NavBarBackground/MainAnimation";
 import {
   TravelerEffect,
   MosaicGroundEffect,
@@ -16,10 +16,11 @@ import {
 
 export default function App() {
   return (
-      <>
-        <NavBar />
-        <CenterBody />
-        <CloudWaveEffect />
-      </>
+    <>
+      <NavBar />
+      <CenterBody />
+      <MainAnimation />
+      <CloudWaveEffect />
+    </>
   );
 }
