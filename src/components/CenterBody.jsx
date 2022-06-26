@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { css } from "@emotion/css";
 import { HiOutlineLightBulb } from "react-icons/hi";
-
+import BackGround from "../Images/GSW.png";
 export default function CenterBody() {
+  const softSkills = [
+    "Frontend Development",
+    "React Native",
+    "React JS",
+    "JavaScript",
+    "DSA",
+    "C++",
+    "RestAPI",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "MATLAB",
+    "Simulink"
+  ];
   const recentProjects = [
     {
       name: "Tic Tac Toe Using React.js",
@@ -27,20 +41,6 @@ export default function CenterBody() {
     }
   ];
 
-  const softSkills = [
-    "Frontend Development",
-    "React Native",
-    "React JS",
-    "JavaScript",
-    "DSA",
-    "C++",
-    "RestAPI",
-    "Node.js",
-    "HTML",
-    "CSS",
-    "MATLAB",
-    "Simulink"
-  ];
   return (
     <>
       <div
@@ -69,43 +69,59 @@ export default function CenterBody() {
             margin-bottom: 7.5px;
             font-weight: bold;
             font-size: 35px;
+            &:hover {
+              color: white;
+            }
           `}
         >
           <HiOutlineLightBulb />
-          Soft Skills
+          You May Ask me About!
         </div>
         <div
           className={css`
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-content: center;
+            display: grid;
+            grid: 1fr / repeat(4, 1fr);
+            margin-bottom: 100px;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
             text-align: center;
+            div:nth-of-type(4n + 2) {
+              margin-right: 200px;
+            }
+            div:nth-of-type(4n + 3) {
+              margin-left: 200px;
+            }
           `}
+          style={{
+            backgroundImage: `url(${BackGround})`,
+            backgroundPosition: "center",
+            backgroundSize: "350px 400px",
+            backgroundRepeat: "no-repeat"
+          }}
         >
           {softSkills.map((item, index) => {
             return (
               <>
-                <div
-                  className={css`
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-content: center;
-                    margin: 10px;
-                    border-style: solid;
-                    border-width: 1.5px;
-                    font-weight: bold;
-                    border-color: black;
-                    text-align: center;
-                    padding: 10px;
-                    color: steelblue;
-                    border-radius: 12px;
-                    background-color: whitesmoke;
-                  `}
-                >
-                  {item}
-                </div>
+                {
+                  <div
+                    className={css`
+                      margin: 10px;
+                      font-weight: bold;
+                      border-color: black;
+                      text-align: center;
+                      padding: 10px;
+                      color: black;
+                      font-size: 25px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      white-space: nowrap;
+                    `}
+                  >
+                    {item}
+                  </div>
+                }
               </>
             );
           })}

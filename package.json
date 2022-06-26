@@ -6,6 +6,7 @@
   "main": "y",
   "dependencies": {
     "@emotion/css": "11.9.0",
+    "@emotion/react": "11.9.3",
     "@emotion/styled": "11.8.1",
     "@mui/material": "5.8.2",
     "jquery": "3.6.0",
