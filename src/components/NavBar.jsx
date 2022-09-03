@@ -189,7 +189,7 @@ export default function NavBar() {
                 border-style: solid;
                 border-width: 2px;
                 border-radius: 12px;
-                width: 120px;
+                width: 140px;
                 text-align: center;
                 &:hover {
                   background: linear-gradient(to right, #006bb8, #fdba21);
