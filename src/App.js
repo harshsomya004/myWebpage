@@ -1,4 +1,5 @@
 import "./styles.css";
+import "antd/dist/antd.css";
 import NavBar from "./components/NavBar";
 import CenterBody from "./components/CenterBody";
 import MainAnimation from "./components/NavBarBackground/MainAnimation";
