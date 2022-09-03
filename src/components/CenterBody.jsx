@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { css } from "@emotion/css";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import BackGround from "../Images/GSW.png";
+import "./Loader.css";
 export default function CenterBody() {
   const softSkills = [
     "Frontend Development",
@@ -69,9 +70,6 @@ export default function CenterBody() {
             margin-bottom: 7.5px;
             font-weight: bold;
             font-size: 35px;
-            &:hover {
-              color: white;
-            }
           `}
         >
           <HiOutlineLightBulb />

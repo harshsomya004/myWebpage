@@ -36,6 +36,9 @@ export default function NavBar() {
                 margin-top: 10px;
                 margin-left: 10px;
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                &:hover {
+                  color: #006bb8;
+                }
               `}
             >
               HARSH SOMYA
@@ -55,51 +58,72 @@ export default function NavBar() {
               padding-bottom: 5px;
             `}
           >
-            <BsGithub
-              size={25}
-              color={"black"}
-              className={css`
-                border-style: solid;
-                border-color: black;
-                border-width: 0.5px;
-                padding: 5px;
-                border-radius: 999px;
-                opacity: 1.5;
-              `}
+            <div
               onClick={() => {
                 window.open("https://github.com/harshsomya004");
               }}
-            />
-            <BsInstagram
-              size={25}
-              color={"#CC99FF"}
-              className={css`
-                border-style: solid;
-                border-color: #cc99ff;
-                border-width: 0.5px;
-                padding: 5px;
-                border-radius: 12px;
-                opacity: 1.5;
-              `}
+            >
+              <BsGithub
+                size={25}
+                color={"black"}
+                className={css`
+                  border-style: solid;
+                  border-color: black;
+                  border-width: 0.5px;
+                  padding: 5px;
+                  border-radius: 999px;
+                  opacity: 1.5;
+                  &:hover {
+                    width: 50px;
+                    height: 50px;
+                  }
+                `}
+              />
+            </div>
+            <div
               onClick={() => {
                 window.open("https://www.instagram.com/__harsh_._04/");
               }}
-            />
-            <BsLinkedin
-              size={25}
-              color={"blue"}
-              className={css`
-                border-style: solid;
-                border-color: blue;
-                border-width: 0.5px;
-                padding: 5px;
-                border-radius: 999px;
-                opacity: 1.5;
-              `}
+            >
+              <BsInstagram
+                size={25}
+                color={"#CC99FF"}
+                className={css`
+                  border-style: solid;
+                  border-color: #cc99ff;
+                  border-width: 0.5px;
+                  padding: 5px;
+                  border-radius: 12px;
+                  opacity: 1.5;
+                  &:hover {
+                    width: 50px;
+                    height: 50px;
+                  }
+                `}
+              />
+            </div>
+            <div
               onClick={() => {
                 window.open("https://www.linkedin.com/in/harsh-somya-004");
               }}
-            />
+            >
+              <BsLinkedin
+                size={25}
+                color={"blue"}
+                className={css`
+                  border-style: solid;
+                  border-color: blue;
+                  border-width: 0.5px;
+                  padding: 5px;
+                  border-radius: 999px;
+                  opacity: 1.5;
+                  &:hover {
+                    width: 50px;
+                    height: 50px;
+                  }
+                `}
+              />
+            </div>
           </div>
         </div>
 
@@ -138,7 +162,8 @@ export default function NavBar() {
                 text-align: center;
                 width: 120px;
                 &:hover {
-                  background: white;
+                  background: linear-gradient(to right, #006bb8, #fdba21);
+                  color: whitesmoke;
                 }
               `}
             >
@@ -167,7 +192,8 @@ export default function NavBar() {
                 width: 120px;
                 text-align: center;
                 &:hover {
-                  background: white;
+                  background: linear-gradient(to right, #006bb8, #fdba21);
+                  color: whitesmoke;
                 }
               `}
             >
@@ -195,7 +221,8 @@ export default function NavBar() {
                 width: 120px;
                 text-align: center;
                 &:hover {
-                  background: white;
+                  background: linear-gradient(to right, #006bb8, #fdba21);
+                  color: whitesmoke;
                 }
               `}
             >
@@ -223,7 +250,8 @@ export default function NavBar() {
                 width: 120px;
                 text-align: center;
                 &:hover {
-                  background: white;
+                  background: linear-gradient(to right, #006bb8, #fdba21);
+                  color: whitesmoke;
                 }
               `}
             >
